@@ -40,12 +40,12 @@ const WalletButton = (props: buttonType) => {
         infuraId: process.env.INFURA_KEY,
       },
     },
-    // walletconnect: {
-    //   package: WalletConnectProvider,
-    //   options: {
-    //     infuraId: '5280d46235c14d18b6daafee5196a01d',
-    //   },
-    // },
+    walletconnect: {
+      package: WalletConnectProvider,
+      options: {
+        infuraId: '5280d46235c14d18b6daafee5196a01d',
+      },
+    },
   };
   const web3Modal = new Web3Modal({
     network: 'mainnet', // optional
