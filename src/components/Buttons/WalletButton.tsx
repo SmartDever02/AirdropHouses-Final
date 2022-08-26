@@ -50,7 +50,7 @@ const WalletButton = (props: buttonType) => {
   const web3Modal = new Web3Modal({
     network: 'mainnet', // optional
     cacheProvider: true, // optional
-    providerOptions: window.innerWidth > 576 ? undefined : providerOptions,
+    providerOptions,
   });
 
   const disconnectWallet = async () => {
