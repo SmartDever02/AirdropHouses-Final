@@ -33,13 +33,13 @@ const WalletButton = (props: buttonType) => {
       },
       package: null,
     },
-    // coinbasewallet: {
-    //   package: CoinbaseWalletSDK,
-    //   options: {
-    //     appName: 'Web 3 Modal Demo',
-    //     infuraId: process.env.INFURA_KEY,
-    //   },
-    // },
+    coinbasewallet: {
+      package: CoinbaseWalletSDK,
+      options: {
+        appName: 'Web 3 Modal Demo',
+        infuraId: process.env.INFURA_KEY,
+      },
+    },
     // walletconnect: {
     //   package: WalletConnectProvider,
     //   options: {
