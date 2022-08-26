@@ -26,13 +26,13 @@ const WalletButton = (props: buttonType) => {
 
   const providerOptions = {
     /* See Provider Options Section */
-    // injected: {
-    //   display: {
-    //     name: 'Metamask',
-    //     description: 'Connect with the provider in your Browser',
-    //   },
-    //   package: null,
-    // },
+    injected: {
+      display: {
+        name: 'Metamask',
+        description: 'Connect with the provider in your Browser',
+      },
+      package: null,
+    },
     // coinbasewallet: {
     //   package: CoinbaseWalletSDK,
     //   options: {
