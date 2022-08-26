@@ -7,7 +7,7 @@ import CoinbaseWalletSDK from '@coinbase/wallet-sdk';
 import { ethers } from 'ethers';
 
 import { Transition } from '@headlessui/react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import walletIcon from '../../resources/images/landing/walletIcon.svg';
 import walletIconOver from '../../resources/images/landing/walletIconOver.svg';
@@ -50,7 +50,7 @@ const WalletButton = (props: buttonType) => {
   const web3Modal = new Web3Modal({
     network: 'mainnet', // optional
     cacheProvider: true, // optional
-    providerOptions,
+    providerOptions: window.innerWidth > 576 ? undefined : providerOptions,
   });
 
   const disconnectWallet = async () => {
